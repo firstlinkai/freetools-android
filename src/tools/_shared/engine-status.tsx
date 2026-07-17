@@ -1,4 +1,3 @@
-"use client";
 
 import { Loader2, Zap } from "lucide-react";
 import { Panel } from "@/components/tool/panel";

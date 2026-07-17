@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/copy-ffmpeg.mjs && tsc --noEmit && vite build && node scripts/check-offline.mjs",
+    "build": "node scripts/copy-ffmpeg.mjs && node scripts/check-tools.mjs && tsc --noEmit && vite build && node scripts/check-offline.mjs",
     "build:fast": "node scripts/copy-ffmpeg.mjs && vite build && node scripts/check-offline.mjs",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",

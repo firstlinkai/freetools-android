@@ -1,4 +1,3 @@
-"use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Download, Loader2, RotateCcw } from "lucide-react";

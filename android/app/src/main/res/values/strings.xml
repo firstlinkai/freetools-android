@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FreeTools</string>
+    <string name="title_activity_main">FreeTools</string>
+    <string name="package_name">click.freetools.app</string>
+    <string name="custom_url_scheme">click.freetools.app</string>
+</resources>
