@@ -13,8 +13,11 @@ const dest = join(root, "public", "ffmpeg");
 mkdirSync(dest, { recursive: true });
 
 const corePkg = join(root, "node_modules", "@ffmpeg", "core");
+// ESM build, not UMD: our Vite config emits @ffmpeg/ffmpeg's worker as an ES
+// module worker, where importScripts() (the UMD load path) throws. The ESM
+// core is loaded via dynamic import(), which module workers support.
 for (const file of ["ffmpeg-core.js", "ffmpeg-core.wasm"]) {
-  const src = join(corePkg, "dist", "umd", file);
+  const src = join(corePkg, "dist", "esm", file);
   copyFileSync(src, join(dest, file));
   const mb = (statSync(src).size / 1024 / 1024).toFixed(1);
   console.log(`copied ${file} (${mb} MB)`);
