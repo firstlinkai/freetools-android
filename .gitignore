@@ -16,3 +16,4 @@ android/capacitor-cordova-android-plugins/build/
 # signing
 *.keystore
 keystore.properties
+*.apk
