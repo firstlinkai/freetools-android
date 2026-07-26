@@ -1,10 +1,13 @@
 # FreeTools Android
 
-Local-first Android port of [FreeTools.click](https://www.freetools.click) — all 60
-privacy-first utilities (PDF, video, audio, image, document, text tools) running
-**100% on-device** inside a hardened Capacitor WebView. No internet permission,
-no analytics, no CDN fetches: every byte of every tool, including the ~31 MB
-FFmpeg WebAssembly core, ships inside the APK.
+Local-first Android port of [FreeTools.click](https://www.freetools.click) — all 100
+privacy-first utilities (video, audio, PDF, image, developer, text, and generator
+tools) running **100% on-device** inside a hardened Capacitor WebView. No internet
+permission, no analytics, no CDN fetches: every byte of every tool, including the
+~31 MB FFmpeg WebAssembly core, ships inside the APK.
+
+**Current release:** v1.0.1 — [`FreeTools-v1.0.1-release.apk`](FreeTools-v1.0.1-release.apk)
+(signed, ~15 MB), tested on-device.
 
 ## Architecture
 
